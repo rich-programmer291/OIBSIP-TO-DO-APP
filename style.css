@@ -1,0 +1,111 @@
+:root{
+    --primary-color: #afa3ef;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+    font-size: 20px;
+    background-color: var(--primary-color);
+    background-image: url(background.png);
+    margin: 2%;
+}
+
+h1,h2{
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+h1{
+    background-color: rgb(255,255,255,0.89);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2%;
+}
+
+.intro-head{
+    letter-spacing: 2px;
+}
+
+.input-form{
+    background-color: rgb(255,255,255,0.89);
+    padding: 3%;
+    border-radius: 20px;
+    width: 30%;
+    height: 330px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#task-input{
+    width: 90%;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: inherit;
+    margin: 25% 0 0 0;
+}
+
+.add-task{
+    width: 100%;
+    font-size: 20px;
+    font-family: inherit;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 8% 0 0 0;
+    color: #fff;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    height: 30px;
+    width: 100%;
+}
+
+.delete-btn{
+    font-family: inherit;
+    color: var(--primary-color);
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox{
+    width: 25px;
+}
+
+input:checked+p{
+    text-decoration: line-through;
+    text-decoration-color: var(--primary-color);
+}
+
+.task-text{
+    margin: 0;
+    font-size: 15px;
+    width: 90%;
+    text-transform: capitalize;
+}
+
+.tasks{
+    background-color: rgb(255,255,255,0.89);
+    padding: 3%;
+    border-radius: 20px;
+    width: 100%;
+}
